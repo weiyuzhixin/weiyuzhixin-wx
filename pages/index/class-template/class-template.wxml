@@ -1,0 +1,13 @@
+<!--pages/index/class-template/class-template.wxml-->
+<template name="scrollTemplate">
+  <view class="class-item">
+      <image src="{{picture}}" ></image>
+      <view class="text-container">
+        <text class="class-title">{{class_name}}</text>
+        <!-- <view class="flex-row">
+          <text class="text-xs">共{{total}}讲</text>
+          <text class="text-xs">{{view}}万次浏览</text>
+        </view> -->
+      </view>
+  </view>
+</template>

@@ -1,0 +1,37 @@
+<!--pages/swiper-picture/swiper-picture.wxml-->
+<van-search placeholder="请搜索喜欢的护工" value="{{ value }}" background="#02C9ED"/>
+<view class="container">
+
+  <!-- 轮播图 -->
+  <swiper autoplay circular indicator-dots>
+    <swiper-item>
+      <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
+    </swiper-item>
+        <swiper-item>
+      <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
+    </swiper-item>
+        <swiper-item>
+      <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
+    </swiper-item>
+        <swiper-item>
+      <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 导航菜单 -->
+  <view class="nav">
+    <view class="menu" wx:for="{{swiperDatabase}}" wx:key="{{index}}">
+      <text>{{item.title}}</text>
+      <image src="{{item.src}}"></image>
+    </view>
+  </view>
+</view>
+<!-- 人员列表 -->
+<view class="product">
+  <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{index}}">
+    <image src="{{item.src}}" mode="widthFix"></image>
+    <view class="info">
+      <text>{{item.name}}</text>
+      <text class="price">{{item.price}}</text>
+    </view>
+  </view>
+</view>

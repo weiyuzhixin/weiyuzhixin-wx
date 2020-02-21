@@ -1,0 +1,29 @@
+<!--pages/index/index.wxml-->
+<import src="class-template/class-template.wxml" />
+<van-search placeholder="在这里输入" value="{{ value }}" background="#02C9ED"/>
+<!-- 轮播图 -->
+<swiper indicator-dots='true' autoplay='true' interval='4000'>
+  <swiper-item>
+    <image src='/../../icon/zhao.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/../../icon/zha.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/../../icon/zh.jpg'></image>
+
+  </swiper-item>
+</swiper>
+<van-grid column-num="2" border="{{ false }}">
+  <van-grid-item use-slot wx:for="{{ 2 }}" wx:for-item="index">
+    <image
+      style="width: 100%; height: 90px;"
+      src="https://img.yzcdn.cn/vant/apple-{{ index + 1 }}.jpg"
+    />
+  </van-grid-item>
+</van-grid>
+<scroll-view scroll-x="true" class="class-container flex-row" enable-flex="true" >
+  <block wx:for="{{classData}}" wx:for-item="item">
+    <template is="scrollTemplate" data="{{...item}}" />
+  </block>
+</scroll-view>

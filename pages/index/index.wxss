@@ -1,0 +1,30 @@
+/* pages/index/index.wxss */
+@import "/pages/index/class-template/class-template.wxss";
+swiper {
+  height: 400rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: #02cde9;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.class-container {
+  width: 100%;
+  height: 540rpx;
+  padding-right: 30rpx;
+  /* background-color: #02cde9; */
+}
+.image {
+width: 220px;
+height: 150px;
+display: inline-block;
+overflow: hidden;
+
+}
+.van-search__content{
+  border-radius: 20px !important;
+}

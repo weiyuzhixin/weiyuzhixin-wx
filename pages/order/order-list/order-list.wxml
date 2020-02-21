@@ -1,0 +1,21 @@
+<!--pages/order/order-list/order-list.wxml-->
+<view class="orderCart">
+  <view class="contanierUp">
+    <checkbox-group>
+      <checkbox></checkbox>
+        <text class="text-title left">名称</text>
+    </checkbox-group>
+
+    <!-- <text class="text-title right">状态</text> -->
+  </view>
+  <van-divider />
+  <view class="contanierDown">
+    <image src="https://ae01.alicdn.com/kf/H0c3c1f01e08042d790c2ca0c822f94dd7.jpg"></image>
+    <view class="info">
+    <text class="right">湖北宜昌三峡大学退休教师湖北宜昌</text>  <van-divider />
+    <!-- <text class="name">金老师</text>
+      <van-divider /> -->
+    <text class="price">$99</text>
+    </view>
+  </view>
+</view>
