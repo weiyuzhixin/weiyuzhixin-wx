@@ -1,0 +1,57 @@
+<!--pages/more/more.wxml-->
+
+<view class="container more">
+  <view class="user flex-wrp">
+    <view class="avatar flex-item">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </view>
+    <view class="user-info flex-item">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="edit">未设置个性签名哦~</text>
+    </view>
+  </view>
+
+  <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icon/eye.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的资料</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp" bindtap="goToCollect">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icon/ministar.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp" bindtap="goToOrder">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icon/draft.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的订单</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp" bindtap="goToCards">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icon/money.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的卡包</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp" bindtap="goSystemSettings">
+      <view class="myitem-icon flex-item" >
+        <image src="../../icon/set.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>系统设置</text>
+      </view>
+    </view>
+  </view>
+</view>
+

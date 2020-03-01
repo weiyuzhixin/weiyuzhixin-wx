@@ -1,19 +1,30 @@
 <!--pages/swiper-picture/swiper-picture.wxml-->
-<van-search placeholder="请搜索喜欢的护工" value="{{ value }}" background="#02C9ED"/>
+<import src="class-template/class-template.wxml" />
+<!-- <van-search placeholder="请搜索喜欢的护工" value="{{ value }}" background="white" /> -->
 <view class="container">
+ <view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../../icon/search.png"></image>
+          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right flex-item" bindtap="chooseTap" style="margin:0 0 0 10rpx;background:white">
+          <image src="../../icon/map.png"></image>
+      </view>
+  </view>
+
 
   <!-- 轮播图 -->
   <swiper autoplay circular indicator-dots>
+    <swiper-item bindtap="goToDe">
+      <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
+    </swiper-item>
     <swiper-item>
       <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
     </swiper-item>
-        <swiper-item>
+    <swiper-item>
       <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
     </swiper-item>
-        <swiper-item>
-      <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
-    </swiper-item>
-        <swiper-item>
+    <swiper-item>
       <image src="/../../icon/zhao.jpg" mode="widthFix"></image>
     </swiper-item>
   </swiper>
@@ -26,12 +37,35 @@
   </view>
 </view>
 <!-- 人员列表 -->
-<view class="product">
-  <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{index}}">
-    <image src="{{item.src}}" mode="widthFix"></image>
-    <view class="info">
-      <text>{{item.name}}</text>
-      <text class="price">{{item.price}}</text>
+<!-- <van-panel title="猜你喜欢" desc="" status="">
+  <view class="product">
+    <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{index}}">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <view class="info">
+        <text>{{item.name}}</text>
+        <text class="price">{{item.price}}</text>
+      </view>
     </view>
   </view>
-</view>
+</van-panel> -->
+
+<van-tabs active="a">
+  <van-tab title="猜你喜欢" name="a">
+    <view class="product">
+      <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{index}}">
+        <image src="{{item.src}}" mode="widthFix"></image>
+        <view class="info">
+          <text>{{item.name}}</text>
+          <text class="price">{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="金牌护工" name="b">
+   <scroll-view scroll-x="true" class="class-container flex-row" enable-flex="true" >
+  <block wx:for="{{classData}}" wx:for-item="item">
+    <template is="scrollTemplate" data="{{...item}}" />
+  </block>
+</scroll-view>
+  </van-tab>
+</van-tabs>

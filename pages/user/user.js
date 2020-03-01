@@ -55,5 +55,15 @@ Page({
     wx.navigateTo({
       url: '../order/order'
     })
+  },
+  goSystemSettings: function(){
+    wx.navigateTo({
+      url: '../system-settings/system-settings'
+    })
+  },
+  goToCollect: function(){
+    wx.navigateTo({
+      url: '../collect/collect'
+    })
   }
 })

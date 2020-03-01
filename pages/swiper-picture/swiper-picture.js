@@ -1,6 +1,7 @@
 // pages/swiper-picture/swiper-picture.js
 var swiperDatabase = require('../../data/swiper.js');
 var productDatabase = require('../../data/product.js');
+var scrollData = require('../../data/information.js');
 Page({
 
   /**
@@ -16,11 +17,21 @@ Page({
   onLoad: function (options) {
     this.setData({
       swiperDatabase: swiperDatabase.Swiper_database,
-      productDatabase: productDatabase.Product_database
+      productDatabase: productDatabase.Product_database,
+      classData: scrollData.Class_database
     })
     console.log(this.data.swiperdatabase)
   },
-
+  chooseTap: function () {
+    wx.chooseLocation({
+      success: function (res) {
+        console.log(res.latitude);
+        console.log(res.longitude);
+      },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -68,5 +79,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  goToDe: function(){
+    wx.navigateTo({
+      url: '../detail/detail',
+    })
   }
 })

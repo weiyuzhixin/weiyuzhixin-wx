@@ -16,7 +16,7 @@
       <image src='../../icon/m_cost.png '></image>
       <text>我的订单</text>
     </view>
-    <view class='info-item' style='border-bottom:1rpx solid #ddd'>
+    <view class='info-item' style='border-bottom:1rpx solid #ddd' bindtap="goToCollect">
       <image src='../../icon/m_business.png '></image>
       <text>我的收藏</text>
     </view>
@@ -24,7 +24,7 @@
       <image src='../../icon/m_deliver.png '></image>
       <text>我的卡包</text>
     </view>
-    <view class='info-item'>
+    <view class='info-item' bindtap="goSystemSettings">
       <image src='../../icon/m_system.png '></image>
       <text>系统设置</text>
     </view>

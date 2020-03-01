@@ -1,27 +1,15 @@
 <!--pages/cart/cart.wxml-->
+<!-- <van-panel title="购物车" desc="" status="管理"> -->
 <view class="container-cart">
   <view class="container-card">
     <scroll-view scorll-y>
       <block wx:for="{{cartsDatabase}}" wx:for-item="item">
-        <!-- <view class="product">
-          <image src="{{item.src}}" mode="widthFix"></image>
-          <view class="info">
-            <text>{{item.name}}</text>
-            <text class="price">{{item.price}}</text>
-          </view>
-          <checkbox-group id="{{item.id}}" bindtap="checkboxChange">
-            <checkbox>
-            </checkbox>
-          </checkbox-group>
-        </view> -->
         <view class="orderCart">
           <view class="contanierUp">
             <checkbox-group id="{{item.id}}" bindtap="checkboxChange">
               <checkbox></checkbox>
-              <text class="text-title left">分类名称</text>
+              <text class="text-title left">名称</text>
             </checkbox-group>
-
-            <!-- <text class="text-title right">状态</text> -->
           </view>
           <van-divider />
           <view class="contanierDown">
@@ -52,3 +40,4 @@
     <text>立即结算</text>
   </button>
 </view>
+<!-- </van-panel> -->

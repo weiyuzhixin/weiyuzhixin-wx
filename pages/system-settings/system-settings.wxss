@@ -1,0 +1,20 @@
+/* pages/system-settings/system-settings.wxss */
+page{
+  background-color: #F2F2F2;
+}
+.up{
+  margin: 20rpx 0;
+  color: rgb(20, 10, 10);
+}
+.down{
+  margin-bottom:20rpx; 
+}
+.van-cell__title,.van-cell__value {
+-webkit-flex: 1;
+flex: 1;
+color: rgb(20, 10, 10);
+font-size: 30rpx;
+}
+.van-cell{
+  line-height: 36px !important;
+}

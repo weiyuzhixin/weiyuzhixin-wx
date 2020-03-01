@@ -1,0 +1,4 @@
+<!--pages/cards/cards.wxml-->
+
+<van-cell title="会员卡" is-link/>
+<van-cell title="优惠券" is-link />

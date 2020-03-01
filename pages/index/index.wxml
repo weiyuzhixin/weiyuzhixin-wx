@@ -1,29 +1,50 @@
-<!--pages/index/index.wxml-->
-<import src="class-template/class-template.wxml" />
-<van-search placeholder="在这里输入" value="{{ value }}" background="#02C9ED"/>
-<!-- 轮播图 -->
-<swiper indicator-dots='true' autoplay='true' interval='4000'>
-  <swiper-item>
-    <image src='/../../icon/zhao.jpg'></image>
-  </swiper-item>
-  <swiper-item>
-    <image src='/../../icon/zha.jpg'></image>
-  </swiper-item>
-  <swiper-item>
-    <image src='/../../icon/zh.jpg'></image>
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../../icon/search.png"></image>
+          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right flex-item" bindtap="upper" style="margin:0 10rpx;background:#F2F2F2">
+          <image src="../../icon/lighting.png"></image>
+      </view>
+  </view>
 
-  </swiper-item>
-</swiper>
-<van-grid column-num="2" border="{{ false }}">
-  <van-grid-item use-slot wx:for="{{ 2 }}" wx:for-item="index">
-    <image
-      style="width: 100%; height: 90px;"
-      src="https://img.yzcdn.cn/vant/apple-{{ index + 1 }}.jpg"
-    />
-  </van-grid-item>
-</van-grid>
-<scroll-view scroll-x="true" class="class-container flex-row" enable-flex="true" >
-  <block wx:for="{{classData}}" wx:for-item="item">
-    <template is="scrollTemplate" data="{{...item}}" />
-  </block>
+    <block wx:for="{{feed}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="feed-item">
+            <view class="feed-source">
+                <a class="">
+                    <view class="avatar">
+                        <image src="{{item.feed_source_img}}"></image>
+                    </view>
+                    <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
+                </a>
+                <image class="item-more" mode="aspectFit" src="../../icon/more.png"></image>
+            </view>
+            <view class="feed-content">
+                <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
+                    <a class="question-link">
+                        <text>{{item.question}}</text>
+                    </a>
+                </view>
+                <view class="answer-body">
+                    <view bindtap="bindItemTap">
+                        <text class="answer-txt" aid="{{answer_id}}">{{item.answer_ctnt}}</text>
+                    </view>
+                    <view class="answer-actions" bindtap="bindItemTap">
+                        <view class="like dot">
+                            <a>{{item.good_num}} 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>{{item.comment_num}} 评论 </a>
+                        </view>
+                        <view class="follow-it">
+                            <a>关注问题</a>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
 </scroll-view>
+
