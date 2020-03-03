@@ -24,7 +24,7 @@
     border-radius: 28rpx;
     margin: 0 10rpx;
     background: #EEF5F8;
-    color: #2186E0;
+    color: #02C9EF;
     font-size: 28rpx;
     vertical-align: middle;
 }
@@ -66,7 +66,7 @@
     float: right;
     padding: 20rpx 55rpx;
     color: #ffffff;
-    background: #52C980;
+    background: #02C9EF;
     border-radius: 3px;
     font-size: 26rpx;
     margin: 0;

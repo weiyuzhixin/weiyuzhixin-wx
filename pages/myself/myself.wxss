@@ -1,0 +1,10 @@
+/* pages/myself/myself.wxss */
+.van-cell__title,.van-cell__value {
+-webkit-flex: 1;
+flex: 1;
+color: rgb(20, 10, 10);
+font-size: 30rpx;
+}
+.van-cell{
+  line-height: 36px !important;
+}

@@ -1,53 +1,97 @@
 /* pages/order/order-list/order-list.wxss */
-page{
-    background-color: #eceeea;
-}
-.orderCart{
-  background-color: #fff;
-  height: 400rpx;
-  border-radius: 20rpx;
 
+page {
+  background-color: #f2f2f2;
 }
-.contanierUp{
-  height: 14%;
-  display: flex;
-  flex-direction: row;
 
+.marginCon {
+  background-color: white;
+  padding: 0 30rpx;
 }
-.contanierUp checkbox-group{
-  margin: 20rpx 0 0 16rpx;
-}
-.contanierDown{
+
+.title {
+  position: relative;
+  padding-top: 18rpx;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  height: 86%;
-}
-.contanierDown image{
-  
-  height: 250rpx;
-  width: 250rpx;
- 
-  margin-left: 16rpx;
-}
-.left{
-  font-size: 30rpx;
-  font-weight: 700;
+  height: 70rpx;
 
 }
-.right{
-  font-size: 36rpx;
-  font-weight: 300;
-  word-break: break-all;
-}
-.info{
-  display: flex;
-  flex-direction: column;
-  margin-left: 16rpx;
 
+.titleLeft {
+  position: relative;
+  float: left;
+  font-size: 25rpx;
+  line-height: 1.5;
 }
-.price{
-  text-align: right;
-  padding-right: 16rpx;
-  color: orange;
+
+.titleRight {
+  position: relative;
+  float: right;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.imgCon {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #999;
+  border-radius: 20rpx;
+}
+.imgCon image{
+  height: 100%;
+  width: 100%;
+}
+.priceAndTime {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(88, 90, 94, 0.4);
+  height: 24%;
+  padding: 10rpx 0;
+  width: 100%;
+  /* z-index: 1; */
+}
+
+.time {
+  position: relative;
+  float: left;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  /* border-right: 1px solid white; */
+}
+
+.price {
+  position: relative;
+  float: right;
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  border-left: 1px solid white;
+}
+
+.threeBtn {
+  display: flex;
+  width: 80%;
+  height: 106rpx;
+  /* background-color: blueviolet; */
+}
+
+button {
+  margin-left: 20rpx;
+  padding: 10rpx 0;
+}
+
+.threeBtn button {
+  border: 1px solid #999;
+  border-radius: 20rpx;
+  width: 30%;
+  height: 60rpx;
+  font-weight: 100;
+  font-size: 25rpx;
+  margin-top: 20rpx;
 }

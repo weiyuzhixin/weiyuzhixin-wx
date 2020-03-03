@@ -22,7 +22,7 @@
                         <text>3316</text>
                     </view>
                     <view class="comment">
-                        <image src="../../icon/comment2.png"></image>
+                        <image src="https://ae01.alicdn.com/kf/H9685eef0b5bf49308777f9d915eecab8y.png"></image>
                         <text>27</text>
                     </view>
                 </view>
@@ -33,7 +33,7 @@
         </view>
         <view class="que-operate flex-wrp">
             <view class="invite flex-item">
-                <image src="../../icon/invite.png"></image>
+                <image src="https://ae01.alicdn.com/kf/Hab32b72b07344897aa9d8284fcd71c1be.png"></image>
                 <text>邀请回答</text>
             </view>
             <view class="write flex-item">
@@ -47,7 +47,7 @@
             <view class="feed-source">
                 <a class="" bindTap="">
                     <view class="avatar">
-                        <image src="../../icon/icon1.jpeg"></image>
+                        <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
                     </view>
                     <text>Rebecca</text>
                 </a>
@@ -76,7 +76,7 @@
             <view class="feed-source">
                 <a class="" bindTap="">
                     <view class="avatar">
-                        <image src="../../icon/icon1.jpeg"></image>
+                        <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
                     </view>
                     <text>Rebecca</text>
                 </a>
@@ -105,7 +105,7 @@
             <view class="feed-source">
                 <a class="" bindTap="">
                     <view class="avatar">
-                        <image src="../../icon/icon1.jpeg"></image>
+                        <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
                     </view>
                     <text>Rebecca</text>
                 </a>
@@ -134,7 +134,7 @@
             <view class="feed-source">
                 <a class="" bindTap="">
                     <view class="avatar">
-                        <image src="../../icon/icon1.jpeg"></image>
+                        <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
                     </view>
                     <text>Rebecca</text>
                 </a>
@@ -163,7 +163,7 @@
             <view class="feed-source">
                 <a class="" bindTap="">
                     <view class="avatar">
-                        <image src="../../icon/icon1.jpeg"></image>
+                        <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
                     </view>
                     <text>Rebecca</text>
                 </a>
@@ -192,7 +192,7 @@
             <view class="feed-source">
                 <a class="" bindTap="">
                     <view class="avatar">
-                        <image src="../../icon/icon1.jpeg"></image>
+                        <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
                     </view>
                     <text>Rebecca</text>
                 </a>

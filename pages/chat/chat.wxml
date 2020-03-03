@@ -2,7 +2,7 @@
 <view class="container chat">
   <view class="chat-item flex-wrp">
     <view class="avatar flex-item">
-      <image src="../../icon/icon8.jpg"></image>
+      <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
     </view>
     <view class="chat-content flex-item">
       <view class="chat-source">
@@ -14,7 +14,7 @@
   </view>
   <view class="chat-item flex-wrp">
     <view class="avatar flex-item">
-      <image src="../../icon/icon9.jpeg"></image>
+      <image src="https://ae01.alicdn.com/kf/H28c1df4f8cfe4de28f8606d09510c5739.jpeg"></image>
     </view>
     <view class="chat-content flex-item">
       <view class="chat-source">

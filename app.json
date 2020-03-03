@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/more/more",
+    "pages/myself/myself",
+    "pages/order/order",
+    "pages/order/order-list/order-list",
     "pages/chat/chat",
     "pages/message/message",
     "pages/swiper-picture/swiper-picture",
@@ -7,17 +11,13 @@
     "pages/answer/answer",
     "pages/question/question",
     "pages/communicate/communicate",
-    "pages/more/more",
     "pages/cards/cards",
     "pages/reset/reset",
     "pages/cart/cart",
-   
     "pages/collect/collect",
     "pages/user/user",
     "pages/system-settings/system-settings",
-    "pages/detail/detail",
-    "pages/order/order",
-    "pages/order/order-list/order-list"
+    "pages/detail/detail"
   ],
   "usingComponents": {
     "van-search": "../../miniprogram_npm/vant-weapp/search/index",
@@ -62,8 +62,8 @@
         "selectedIconPath": "/icon/m_dfm.png"
       },
       {
-        "pagePath": "pages/cart/cart",
-        "text": "购物车",
+        "pagePath": "pages/order/order",
+        "text": "订单",
         "iconPath": "/icon/m_buy (1).png",
         "selectedIconPath": "/icon/m_buy.png"
       },

@@ -1,21 +1,49 @@
 <!--pages/order/order-list/order-list.wxml-->
-<view class="orderCart">
+<!-- <view class="orderCart">
   <view class="contanierUp">
     <checkbox-group>
       <checkbox></checkbox>
-        <text class="text-title left">名称</text>
+      <text class="text-title left">名称</text>
     </checkbox-group>
 
-    <!-- <text class="text-title right">状态</text> -->
+
   </view>
   <van-divider />
   <view class="contanierDown">
     <image src="https://ae01.alicdn.com/kf/H0c3c1f01e08042d790c2ca0c822f94dd7.jpg"></image>
     <view class="info">
-    <text class="right">湖北宜昌三峡大学退休教师湖北宜昌</text>  <van-divider />
-    <!-- <text class="name">金老师</text>
-      <van-divider /> -->
-    <text class="price">$99</text>
+      <text class="right">湖北宜昌三峡大学退休教师湖北宜昌</text>
+      <van-divider />
+
+      <text class="price">$99</text>
     </view>
+  </view>
+</view> -->
+<view class="marginCon">
+  <view class="title">
+    <view class="titleLeft">
+      <text>名称前缀一堆堆</text>
+    </view>
+    <view class="titleRight">
+      <text>订单状态</text>
+    </view>
+  </view>
+  <view class="imgCon">
+   <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg"></image>
+    <view class="priceAndTime">
+   
+      <view class="time">
+        <!-- \n是换行符 -->
+        <text style="line-height:1.5; display:inline;">时间\n<text style="color:#02C9EF;">1h</text> </text>
+      </view>
+      <view class="price">
+        <text style="line-height:1.5">总计支付\n<text style="color:#02C9EF;">￥195</text> </text>
+      </view>
+    </view>
+  </view>
+  <view class="threeBtn">
+    <button>删除</button>
+    <button>查看评论</button>
+    <button>再次预订</button>
   </view>
 </view>

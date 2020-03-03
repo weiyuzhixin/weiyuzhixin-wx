@@ -1,0 +1,9 @@
+<!--pages/myself/myself.wxml-->
+<van-cell-group>
+  <van-field value="{{ username }}" clearable label="昵称" icon="question-o" placeholder="" bind:click-icon="onClickIcon" />
+  <van-field value="{{ sex }}" clearable label="性别" placeholder="" bind:click-icon="onClickIcon" />
+  <van-field value="{{ phonenumber }}" clearable label="手机号" placeholder="" bind:click-icon="onClickIcon" />
+  <van-field value="{{ password }}" type="password" label="个性签名" placeholder="未设置个性签名哦" autosize border="{{ false }}" />
+
+</van-cell-group>
+<van-cell title="确认保存" is-link />

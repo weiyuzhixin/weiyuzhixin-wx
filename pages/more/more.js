@@ -70,5 +70,10 @@ Page({
     wx.navigateTo({
       url: '../cards/cards'
     })
+  },
+  goToMyself: function(){
+    wx.navigateTo({
+      url: '../myself/myself'
+    })
   }
 })

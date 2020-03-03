@@ -12,7 +12,7 @@
   </view>
 
   <view class="my">
-    <view class="my-item flex-wrp">
+    <view class="my-item flex-wrp" bindtap="goToMyself">
       <view class="myitem-icon flex-item" >
         <image src="../../icon/eye.png"></image>
       </view>

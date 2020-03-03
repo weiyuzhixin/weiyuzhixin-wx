@@ -7,7 +7,7 @@
         <view class="bg-half"></view>
         <view class="answerer flex-wrp">
             <view class="avatar flex-item">
-                <image src="../../icon/icon1.jpeg"></image>
+                <image src="https://ae01.alicdn.com/kf/H55a4d6658256474ca098c9c7ecdecb02d.jpeg"></image>
             </view>
             <view class="answerer-info flex-item">
                 <text class="answerer-name">Rebecca</text>
@@ -32,7 +32,7 @@
             看到描述最后一段，感觉有骗答案的嫌疑
 
         </text>
-        <image src="../../icon/1444983318907-_DSC1826.jpg"></image>
+        <image src="https://ae01.alicdn.com/kf/H09073890562143e686f17b864b6a13e9L.jpg"></image>
         <text>
             难道不明白纸质书更贵啊！！！
 
@@ -47,13 +47,13 @@
             看到描述最后一段，感觉有骗答案的嫌疑
 
         </text>
-        <image src="../../icon/1444983318907-_DSC1826.jpg"></image>
+        <image src="https://ae01.alicdn.com/kf/H104bb86974334d719bafe79a63e0d07cx.jpg"></image>
     </view>
 
     <view class="answer-footer flex-wrp">
         <view class="good flex-item">
             <view class="good-bad">
-                <image src="../../icon/good-bad.png"></image>
+                <image src="https://ae01.alicdn.com/kf/H89a5d0b35d934c0fb71e518240dcba2aW.png"></image>
             </view>
             <view class="good-num">2.1k</view>
         </view>
