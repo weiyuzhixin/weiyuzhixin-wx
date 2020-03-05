@@ -1,8 +1,9 @@
 <!-- banner -->
 <view class="container">
   <swiper autoplay circular indicator-dots>
-   <swiper-item>
-      <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu  controls style="width:100%;" mode="widthFix"></video>
+    <swiper-item>
+      <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+        enable-danmu controls style="width:100%;" mode="widthFix"></video>
     </swiper-item>
     <swiper-item>
       <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
@@ -20,13 +21,37 @@
 </view>
 
 <view class="introduce">
+  <text class="title">护工介绍</text>
+  <text class="info">
+我是XX学院会计学专业XX届毕业生XXX。四年的大学生活，我认真学习专业知识，专业成绩名列前茅。现已系统的学习并掌握了本专业所开设的课程，如初级会计学、财务会计、财务管理、成本会计、管理会计、审计学、统计学等相关课程，有了扎实的专业理论基础；同时，我自学了Photoshop软件、金蝶财务软件，从而提高了我的自学能力。
+</text>
+</view>
+
+<view class="schedule">
+  <text class="title">工作时间</text>
+<view class="section">
+  <!-- <view class="section__title">日期选择器</view> -->
+  <picker mode="date" value="{{date}}" start="2020-03-01" end="2022-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      日期: {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      开始时间: {{time}}
+    </view>
+  </picker>
+</view>
 
 </view>
 
-<view class="price">
-
-</view>
-
-<view class="comment">
+<view class="footer">
+  <view class="threeBtn">
+    <button>收藏</button>
+    <button>预订</button>
+  </view>
 
 </view>

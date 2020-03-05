@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/swiper-picture/swiper-picture",
+    "pages/detail/detail",
+    "pages/order/order-list/order-list",
+    "pages/order/order",
     "pages/more/more",
     "pages/myself/myself",
-    "pages/order/order",
-    "pages/order/order-list/order-list",
     "pages/chat/chat",
     "pages/message/message",
-    "pages/swiper-picture/swiper-picture",
     "pages/index/index",
     "pages/answer/answer",
     "pages/question/question",
@@ -16,8 +17,7 @@
     "pages/cart/cart",
     "pages/collect/collect",
     "pages/user/user",
-    "pages/system-settings/system-settings",
-    "pages/detail/detail"
+    "pages/system-settings/system-settings"
   ],
   "usingComponents": {
     "van-search": "../../miniprogram_npm/vant-weapp/search/index",
@@ -41,7 +41,9 @@
     "van-swipe-cell": "../../miniprogram_npm/@vant/weapp/swipe-cell/index",
     "van-checkbox": "../../miniprogram_npm/@vant/weapp/checkbox/index",
     "van-checkbox-group": "../../miniprogram_npm/@vant/weapp/checkbox-group/index",
-    "van-field": "../../miniprogram_npm/@vant/weapp/field/index"
+    "van-field": "../../miniprogram_npm/@vant/weapp/field/index",
+    "van-picker": "../../miniprogram_npm/@vant/weapp/picker/index",
+    "van-popup": "../../miniprogram_npm/@vant/weapp/popup/index"
   },
   "tabBar": {
     "color": "#bfbfbf",

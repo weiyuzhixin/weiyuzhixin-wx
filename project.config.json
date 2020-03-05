@@ -24,7 +24,7 @@
 		"nodeModules": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.1",
+	"libVersion": "2.10.0",
 	"appid": "wxdc60ce0cbe6d35b0",
 	"projectname": "weiyuzhixin",
 	"debugOptions": {
