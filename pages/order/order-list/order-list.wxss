@@ -1,96 +1,73 @@
 /* pages/order/order-list/order-list.wxss */
-
-page {
-  background-color: #f2f2f2;
+page{
+  background-color: #F2F2F2;
 }
 
-.marginCon {
-  background-color: white;
+.detailCon{
   padding: 0 30rpx;
 }
 
-.title {
-  position: relative;
-  padding-top: 18rpx;
-  width: 100%;
-  height: 70rpx;
-
-}
-
-.titleLeft {
-  position: relative;
-  float: left;
-  font-size: 25rpx;
-  line-height: 1.5;
-}
-
-.titleRight {
-  position: relative;
-  float: right;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.imgCon {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  background-color: #999;
-  border-radius: 20rpx;
-}
-.imgCon image{
-  height: 100%;
+.detailCon image{
+  height: 300rpx;
   width: 100%;
 }
-.priceAndTime {
-  position: absolute;
+.buyer{
+  background-color: white;
+  width: 100%;
+  margin: 16rpx 0;
+}
+
+.buyer .van-cell {
+position: relative;
+display: -webkit-flex;
+display: flex;
+width: 100%;
+padding: 13px 15px !important;
+font-size: 14px;
+line-height: 24px;
+color: #999 !important;
+font-weight: 500;
+background-color: #fff;
+box-sizing: border-box;
+
+}
+
+
+.buyer .van-cell__value {
+overflow: hidden;
+color: #333 !important;
+text-align: right;
+vertical-align: middle;
+font-weight: bold;
+
+}
+
+.footer{
+  position: fixed;
   bottom: 0;
   left: 0;
-  background: rgba(88, 90, 94, 0.4);
-  height: 24%;
-  padding: 10rpx 0;
   width: 100%;
-  /* z-index: 1; */
-}
-
-.time {
-  position: relative;
-  float: left;
-  justify-content: center;
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  color: white;
-  /* border-right: 1px solid white; */
-}
-
-.price {
-  position: relative;
-  float: right;
-  width: 45%;
-  height: 100%;
-  text-align: center;
-  color: white;
-  border-left: 1px solid white;
-}
-
-.threeBtn {
-  display: flex;
-  width: 80%;
-  height: 106rpx;
-  /* background-color: blueviolet; */
+  height: 100rpx;
+  
 }
 
 button {
+  display: inline-block !important;
   margin-left: 20rpx;
-  padding: 10rpx 0;
+  /* padding: 10rpx 0; */
+  
 }
 
+.threeBtn{
+  background-color: white;
+  margin: 0;
+  padding: 10rpx;
+}
 .threeBtn button {
   border: 1px solid #999;
   border-radius: 20rpx;
   width: 30%;
-  height: 60rpx;
+  margin-left: 10rpx;
   font-weight: 100;
   font-size: 25rpx;
   margin-top: 20rpx;

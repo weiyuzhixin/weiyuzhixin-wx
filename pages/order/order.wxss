@@ -1,10 +1,4 @@
 /* pages/order/order.wxss */
-/* pages/order/order-list/order-list.wxss */
-page{
-    background-color: #eceeea;
-}
-/* pages/order/order-list/order-list.wxss */
-
 page {
   background-color: #f2f2f2;
 }

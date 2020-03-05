@@ -1,49 +1,39 @@
 <!--pages/order/order-list/order-list.wxml-->
-<!-- <view class="orderCart">
-  <view class="contanierUp">
-    <checkbox-group>
-      <checkbox></checkbox>
-      <text class="text-title left">名称</text>
-    </checkbox-group>
+
+<view class="detailCon">
+  <van-cell title="名称一堆堆堆堆" is-link value="查看护工信息" />
+  <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+</view>
+
+<view class="buyer">
+  <van-cell title="预定人" is-link value="名字" />
+  <van-cell title="联系电话" is-link value="19109109122" />
+</view>
+
+<view class="buyer">
+  <van-cell title="预定护工" is-link value="名字" />
+  <van-cell title="预定时间" is-link value="时间" />
+  <van-cell title="护工联系电话" is-link value="1898292883" />
+</view>
 
 
-  </view>
-  <van-divider />
-  <view class="contanierDown">
-    <image src="https://ae01.alicdn.com/kf/H0c3c1f01e08042d790c2ca0c822f94dd7.jpg"></image>
-    <view class="info">
-      <text class="right">湖北宜昌三峡大学退休教师湖北宜昌</text>
-      <van-divider />
+<view class="buyer">
+  <van-cell title="线上支付" is-link value="￥" />
+  <van-cell title="押金" is-link value="￥" />
+  <van-cell title="优惠" is-link value="￥" />
+</view>
 
-      <text class="price">$99</text>
-    </view>
-  </view>
-</view> -->
-<view class="marginCon">
-  <view class="title">
-    <view class="titleLeft">
-      <text>名称前缀一堆堆</text>
-    </view>
-    <view class="titleRight">
-      <text>订单状态</text>
-    </view>
-  </view>
-  <view class="imgCon">
-   <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg"></image>
-    <view class="priceAndTime">
-   
-      <view class="time">
-        <!-- \n是换行符 -->
-        <text style="line-height:1.5; display:inline;">时间\n<text style="color:#02C9EF;">1h</text> </text>
-      </view>
-      <view class="price">
-        <text style="line-height:1.5">总计支付\n<text style="color:#02C9EF;">￥195</text> </text>
-      </view>
-    </view>
-  </view>
+<view class="buyer">
+  <van-cell title="如有问题请联系客服" />
+</view>
+<view class="buyer" style="background-color:#F2F2F2;height:86rpx;">
+<!-- 空白处 -->
+</view>
+<view class="footer">
   <view class="threeBtn">
     <button>删除</button>
     <button>查看评论</button>
     <button>再次预订</button>
   </view>
+
 </view>

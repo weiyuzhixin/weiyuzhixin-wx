@@ -1,34 +1,32 @@
 <!-- banner -->
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+<view class="container">
+  <swiper autoplay circular indicator-dots>
+   <swiper-item>
+      <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu  controls style="width:100%;" mode="widthFix"></video>
     </swiper-item>
-  </block>
-</swiper>
-<scroll-view scroll-y="true">
-  <view class="detail">
-    <text class="title">湖北宜昌三峡大学退休教师</text>
-    <text class="price">￥{{}}</text>
-  </view>
-  <view class="separate"></view>
-  <!-- sku选择 -->
-  <text bindtap="toggleDialog">请选择预约次数</text>
-  <view class="separate"></view>
-  <text>护工评价</text>
-  <text class="text-remark">东西还可以，好评~</text>
-  <view class="separate"></view>
-  <text>护工详情</text>
-  <block wx:for-items="{{}}" wx:key="">
-    <image class="image_detail" src= "/../../icon/zhao.jpg" />
-  </block>
-  <view class="temp"></view>
-</scroll-view>
-<!-- 底部悬浮栏 -->
-<view class="detail-nav">
-  <image bindtap="toCar" src="/icon/star (1).png" />
-  <view class="line_nav"></view>
-  <image bindtap="addLike" src="{{isLike?'/icon/m_buy (1).png':'/icon/m_buy.png'}}" />
-  <button class="button-green" bindtap="addCar" formType="submit">加入购物车</button>
-  <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="introduce">
+
+</view>
+
+<view class="price">
+
+</view>
+
+<view class="comment">
+
 </view>
