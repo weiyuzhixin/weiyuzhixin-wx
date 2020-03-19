@@ -50,8 +50,8 @@
 
 <view class="footer">
   <view class="threeBtn">
-    <button>收藏</button>
-    <button>预订</button>
+    <button>喜爱</button>
+    <button>预约</button>
   </view>
 
 </view>

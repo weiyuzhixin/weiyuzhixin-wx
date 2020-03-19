@@ -49,7 +49,7 @@
   <van-tab title="猜你喜欢" name="a">
     <view class="product">
       <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{item}}">
-        <navigator url="product-list/product-list?productId={{productDatabase.id}}&&prodectName={{productDatabase.name}}&&productIntro={{productDatabase.intro}}">
+        <navigator url="product-list/product-list?productId={{item.id}}&productName={{item.name}}&productIntro={{item.intro}}">
           <image src="{{item.src}}" mode="widthFix"></image>
           <view class="info">
             <text>{{item.name}}</text>

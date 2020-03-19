@@ -1,27 +1,15 @@
 {
   "pages": [
-          "pages/swiper-picture/swiper-picture",
-            "pages/swiper-picture/product-list/product-list",
-            "pages/order/order-list/order-list",
- 
-
-    
-        "pages/detail/detail",
-        "pages/message/message",
-
-        "pages/index/index",
-        "pages/myself/myself",
-
-
-
-
-
     "pages/order/order",
+    "pages/swiper-picture/swiper-picture",
+    "pages/swiper-picture/product-list/product-list",
+    "pages/order/order-list/order-list",
+    "pages/detail/detail",
+    "pages/message/message",
+    "pages/index/index",
+    "pages/myself/myself",
     "pages/more/more",
-
     "pages/chat/chat",
-
-
     "pages/answer/answer",
     "pages/question/question",
     "pages/communicate/communicate",
