@@ -1,0 +1,58 @@
+<!--pages/swiper-picture/product-list/product-list.wxml-->
+<!-- banner -->
+<view class="container">
+  <swiper autoplay circular indicator-dots>
+    <swiper-item>
+      <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+        enable-danmu controls style="width:100%;" mode="widthFix"></video>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="introduce">
+  <text class="title">护工介绍</text>
+  <text class="info">
+  {{productIntro}}
+</text>
+</view>
+
+<view class="schedule">
+  <text class="title">工作时间</text>
+<view class="section">
+  <!-- <view class="section__title">日期选择器</view> -->
+  <picker mode="date" value="{{date}}" start="2020-03-01" end="2022-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      日期: {{date}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      开始时间: {{time}}
+    </view>
+  </picker>
+</view>
+
+</view>
+
+<view class="footer">
+  <view class="threeBtn">
+    <button>收藏</button>
+    <button>预订</button>
+  </view>
+
+</view>

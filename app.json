@@ -1,14 +1,27 @@
 {
   "pages": [
-    "pages/swiper-picture/swiper-picture",
-    "pages/detail/detail",
-    "pages/order/order-list/order-list",
+          "pages/swiper-picture/swiper-picture",
+            "pages/swiper-picture/product-list/product-list",
+            "pages/order/order-list/order-list",
+ 
+
+    
+        "pages/detail/detail",
+        "pages/message/message",
+
+        "pages/index/index",
+        "pages/myself/myself",
+
+
+
+
+
     "pages/order/order",
     "pages/more/more",
-    "pages/myself/myself",
+
     "pages/chat/chat",
-    "pages/message/message",
-    "pages/index/index",
+
+
     "pages/answer/answer",
     "pages/question/question",
     "pages/communicate/communicate",

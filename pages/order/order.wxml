@@ -1,34 +1,36 @@
 <!--pages/order/order.wxml-->
 <van-tabs active="{{ active }}" bind:change="onChange">
   <van-tab title="全部">
+  <block wx:for="{{statusDatabase}}" wx:for-item="item">
     <view class="marginCon">
-  <view class="title">
-    <view class="titleLeft">
-      <text>名称前缀一堆堆</text>
-    </view>
-    <view class="titleRight">
-      <text>订单状态</text>
-    </view>
-  </view>
-  <view class="imgCon">
-   <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg"></image>
-    <view class="priceAndTime">
-   
-      <view class="time">
-        <!-- \n是换行符 -->
-        <text style="line-height:1.5; display:inline;">时间\n<text style="color:#02C9EF;">1h</text> </text>
+      <view class="title">
+        <view class="titleLeft">
+          <text>{{item.name}}</text>
+        </view>
+        <view class="titleRight">
+          <text>{{item.sta}}</text>
+        </view>
       </view>
-      <view class="price">
-        <text style="line-height:1.5">总计支付\n<text style="color:#02C9EF;">￥195</text> </text>
+      <view class="imgCon">
+        <image src="https://ae01.alicdn.com/kf/H4cc3c4fdf15e4f21ab6a837ae16b1553X.jpg"></image>
+        <view class="priceAndTime">
+
+          <view class="time">
+            <!-- \n是换行符 -->
+            <text style="line-height:1.5; display:inline;">\n<text style="color:#02C9EF;">{{item.time}}h</text> </text>
+          </view>
+          <view class="price">
+            <text style="line-height:1.5">总计支付\n<text style="color:#02C9EF;">￥{{item.price}}</text> </text>
+          </view>
+        </view>
+      </view>
+      <view class="threeBtn">
+        <button>删除</button>
+        <button>查看评论</button>
+        <button>再次预订</button>
       </view>
     </view>
-  </view>
-  <view class="threeBtn">
-    <button>删除</button>
-    <button>查看评论</button>
-    <button>再次预订</button>
-  </view>
-</view>
+  </block>
   </van-tab>
   <van-tab title="待付款">待付款</van-tab>
   <van-tab title="待评价">待评价</van-tab>

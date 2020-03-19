@@ -2,14 +2,14 @@
 <import src="class-template/class-template.wxml" />
 <!-- <van-search placeholder="请搜索喜欢的护工" value="{{ value }}" background="white" /> -->
 <view class="container">
- <view class="search flex-wrp">
-      <view class="search-left flex-item">
-          <image src="../../icon/search.png"></image>
-          <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder"/>
-      </view>
-      <view class="search-right flex-item" bindtap="chooseTap" style="margin:0 0 0 10rpx;background:white">
-          <image src="https://ae01.alicdn.com/kf/H7af1436fe01540e591d540c26049a5aew.png"></image>
-      </view>
+  <view class="search flex-wrp">
+    <view class="search-left flex-item">
+      <image src="../../icon/search.png"></image>
+      <input placeholder="搜索话题, 问题或人" placeholder-class="search-placeholder" />
+    </view>
+    <view class="search-right flex-item" bindtap="chooseTap" style="margin:0 0 0 10rpx;background:white">
+      <image src="https://ae01.alicdn.com/kf/H7af1436fe01540e591d540c26049a5aew.png"></image>
+    </view>
   </view>
 
 
@@ -29,31 +29,42 @@
     </swiper-item>
   </swiper>
   <!-- 导航菜单 -->
-  <view class="nav">
+  <!-- <view class="nav">
     <view class="menu" wx:for="{{swiperDatabase}}" wx:key="{{index}}">
       <text>{{item.title}}</text>
       <image src="{{item.src}}"></image>
     </view>
+  </view> -->
+  <view class="gradeContainer">
+    <block wx:for="{{swiperDatabase}}" wx:key="{{index}}">
+      <view class="grade">
+        <image src="{{item.src}}" mode="widthFix"></image>
+      </view>
+
+    </block>
   </view>
 </view>
 <!-- 猜你喜欢和金牌护工 -->
 <van-tabs active="a">
   <van-tab title="猜你喜欢" name="a">
     <view class="product">
-      <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{index}}">
-        <image src="{{item.src}}" mode="widthFix"></image>
-        <view class="info">
-          <text>{{item.name}}</text>
-          <text class="price">{{item.price}}</text>
-        </view>
+      <view class="product_detail" wx:for="{{productDatabase}}" wx:key="{{item}}">
+        <navigator url="product-list/product-list?productId={{productDatabase.id}}&&prodectName={{productDatabase.name}}&&productIntro={{productDatabase.intro}}">
+          <image src="{{item.src}}" mode="widthFix"></image>
+          <view class="info">
+            <text>{{item.name}}</text>
+            <text class="price">{{item.price}}</text>
+          </view>
+        </navigator>
+
       </view>
     </view>
   </van-tab>
   <van-tab title="金牌护工" name="b">
-   <scroll-view scroll-x="true" class="class-container flex-row" enable-flex="true" >
-  <block wx:for="{{classData}}" wx:for-item="item">
-    <template is="scrollTemplate" data="{{...item}}" />
-  </block>
-</scroll-view>
+    <scroll-view scroll-x="true" class="class-container flex-row" enable-flex="true">
+      <block wx:for="{{classData}}" wx:for-item="item">
+        <template is="scrollTemplate" data="{{...item}}" />
+      </block>
+    </scroll-view>
   </van-tab>
 </van-tabs>
